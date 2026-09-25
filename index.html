@@ -179,8 +179,8 @@ canvas {
 
 #vinylButton {
     position: absolute;
-    left: 50%;
-    top: 10%;
+    left: 3%;
+    top: 12%;
     width: 120px;
     height: 120px;
     padding: 0;
@@ -287,7 +287,7 @@ canvas {
 }
 
 .vinyl.playing {
-    animation: vinylSpin 2.4s linear infinite;
+    animation: vinylSpin 6s linear infinite;
 }
 
 @keyframes vinylSpin {
@@ -1087,7 +1087,7 @@ requestAnimationFrame(drawDecorations);
 
 const vinylButton =
     document.getElementById("vinylButton");
-
+birthdaySong.loop = true;
 const birthdaySong =
     document.getElementById("birthdaySong");
 
