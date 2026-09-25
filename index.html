@@ -319,6 +319,16 @@ canvas {
         0 0 5px rgba(255, 105, 160, .9),
         0 0 10px rgba(255, 105, 160, .6);
     pointer-events: none;
+    animation: clickTextFloat 2s ease-in-out infinite;
+}
+
+@keyframes clickTextFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 </style>
