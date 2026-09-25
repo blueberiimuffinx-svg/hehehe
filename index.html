@@ -314,7 +314,7 @@ canvas {
     font-size: 12px;
     font-weight: bold;
     z-index: 21;
-    opacity: 1;
+    opacity: 0;
     text-shadow:
         0 0 5px rgba(255, 105, 160, .9),
         0 0 10px rgba(255, 105, 160, .6);
@@ -1066,6 +1066,10 @@ setTimeout(() => {
 document
     .getElementById("vinylButton")
     .classList.add("showVinyl");
+
+document
+ .getElementById("clickVinylText")
+  .style.opacity = "1";
 
 }, 4500);
 
