@@ -319,6 +319,9 @@ canvas {
         0 0 5px rgba(255, 105, 160, .9),
         0 0 10px rgba(255, 105, 160, .6);
     pointer-events: none;
+}
+
+#clickVinylText.floating {
     animation: clickTextFloat 2s ease-in-out infinite;
 }
 
@@ -1077,10 +1080,11 @@ document
     .getElementById("vinylButton")
     .classList.add("showVinyl");
 
-document
- .getElementById("clickVinylText")
-  .style.opacity = "1";
+const clickText =
+    document.getElementById("clickVinylText");
 
+clickText.style.opacity = "1";
+clickText.classList.add("floating");
 }, 4500);
 
 
